@@ -29,8 +29,8 @@
     <string name="maps_save_toggle_on">Maps save is on</string>
     <string name="maps_save_toggle_off">Maps save is paused</string>
     <string name="accessibility_service_description">Parks &amp; Cafe uses Accessibility only to notice when Google Maps is open, then shows Park / Cafe save buttons. It does not read screen text, passwords, or control other apps.</string>
-    <!-- After adding google-services.json, prefer @string/default_web_client_id from the plugin.
-         Until then, paste your Web client ID from Firebase Console → Project settings → OAuth. -->
-    <string name="default_web_client_id_placeholder">YOUR_WEB_CLIENT_ID.apps.googleusercontent.com</string>
+    <!-- Web client ID from Firebase project parksandcafe (for Google Sign-In ID tokens). -->
+    <string name="default_web_client_id_placeholder">797811353680-1kjaoh5qtk2f8a2toq3ui54f51i13apj.apps.googleusercontent.com</string>
 </resources>
+
 

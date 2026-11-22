@@ -5,6 +5,10 @@ web/.env
 web/.env.local
 web/src/firebase.config.local.ts
 
+# Local agent tooling (Firebase skills install)
+.agents/
+
+
 # Android
 android/.gradle/
 android/**/build/

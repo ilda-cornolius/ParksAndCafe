@@ -23,33 +23,29 @@ Brand: moss green + espresso — glanceable while driving, not generic Material 
 
 ---
 
-## 1. Create Firebase (Ilda — do this first)
+## 1. Firebase project (already wired: `parksandcafe`)
 
-1. Open [Firebase Console](https://console.firebase.google.com/) → **Add project** (e.g. `parks-and-cafe`).
-2. **Authentication** → Sign-in method → enable **Google**.
-3. **Firestore Database** → Create database (start in test mode if you like, then lock rules).
-4. **Rules** tab → paste contents of [`firestore.rules`](./firestore.rules) → Publish.
-5. **Indexes**: when the web app first queries, Firebase may prompt for a composite index on `userId` + `createdAt`. You can also deploy [`firestore.indexes.json`](./firestore.indexes.json) with the Firebase CLI.
+Project **parksandcafe** is configured for this repo:
 
-### Add Android app
+- Google Sign-In enabled (Auth)
+- Firestore `(default)` created; rules + indexes deployed from this repo
+- Android app `com.parksandcafe.app` + Web app registered
+- Local configs (gitignored): `android/app/google-services.json`, `web/.env`  
+  Templates: `android/app/google-services.json.example`, `web/.env.example`
 
-1. Project settings → **Add app** → Android.
-2. Package name: `com.parksandcafe.app`.
-3. Download `google-services.json` → place at `android/app/google-services.json`  
-   (never commit the real file; see `.gitignore`. Shape reference: `android/app/google-services.json.example`).
-4. Add your **debug SHA-1** (required for Google Sign-In):
-   ```bash
-   keytool -list -v -keystore ~/.android/debug.keystore \
-     -alias androiddebugkey -storepass android -keypass android
-   ```
-5. Copy the **Web client ID** (OAuth 2.0 client, type Web) into  
-   `android/app/src/main/res/values/strings.xml` → `default_web_client_id_placeholder`.
+### Still required on your machine (Android Google Sign-In)
 
-### Add Web app
+Add **your** debug keystore SHA-1 to the Android app (the cloud agent’s SHA is not yours):
 
-1. Project settings → **Add app** → Web.
-2. Copy config values into `web/.env` (from `web/.env.example`).
-3. Under Authentication → Settings → **Authorized domains**, ensure `localhost` is listed for local dev.
+```bash
+keytool -list -v -keystore ~/.android/debug.keystore \
+  -alias androiddebugkey -storepass android -keypass android
+```
+
+Then: [Firebase Console → parksandcafe → Project settings → Your apps → Android](https://console.firebase.google.com/project/parksandcafe/settings/general) → add the SHA-1 fingerprint → re-download `google-services.json` into `android/app/` if prompted.
+
+Authorized domains already include `localhost` for web Google Sign-In via CLI config.
+
 
 ---
 
