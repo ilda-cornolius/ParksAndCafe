@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Simplified tree + cup mark -->
+    <path
+        android:fillColor="#F1E9DB"
+        android:pathData="M54,22c-8,0 -14,8 -14,16 0,5 2.5,9.5 6.5,12L42,78h24l-4.5,-28C65.5,47.5 68,43 68,38 68,30 62,22 54,22z" />
+    <path
+        android:fillColor="#C4A484"
+        android:pathData="M40,82h28v4H40z" />
+</vector>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "797811353680",
+    "project_id": "parksandcafe",
+    "storage_bucket": "parksandcafe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797811353680:android:94f5f4cbbab22077c4c955",
+        "android_client_info": {
+          "package_name": "com.parksandcafe.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797811353680-ojsjpsv2qao3253hqqtr5t2itf59m3ac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.parksandcafe.app",
+            "certificate_hash": "0cc7dcc3a6041daf4e4d99f990b321df3ced37a3"
+          }
+        },
+        {
+          "client_id": "797811353680-1kjaoh5qtk2f8a2toq3ui54f51i13apj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLkZB4NuuDElXy5au2hZIr3ijc_At7ES0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797811353680-1kjaoh5qtk2f8a2toq3ui54f51i13apj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ParksAndCafe" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand_moss</item>
+        <item name="colorOnPrimary">@color/on_brand</item>
+        <item name="colorSecondary">@color/brand_coffee</item>
+        <item name="colorOnSecondary">@color/on_brand</item>
+        <item name="android:statusBarColor">@color/brand_dusk</item>
+        <item name="android:navigationBarColor">@color/brand_dusk</item>
+        <item name="android:windowBackground">@color/brand_cream</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+
+    <!-- Translucent sheet over Maps — not a persistent SYSTEM_ALERT_WINDOW bubble -->
+    <style name="Theme.ParksAndCafe.QuickSave" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+</resources>
+
