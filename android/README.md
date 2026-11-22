@@ -7,18 +7,33 @@ Kotlin app with:
 
 Both paths write the same Firestore `places` documents.
 
-## Setup
+## Open in Cursor Desktop (Mac)
 
-1. Create a Firebase project and add an Android app with package `com.parksandcafe.app`.
-2. Download `google-services.json` into `app/google-services.json`  
-   (start from `app/google-services.json.example` for the shape).
-3. Paste your **Web client ID** into  
+1. Clone or pull branch `cursor/scaffold-parks-and-cafe-4165` from  
+   https://github.com/ilda-cornolius/ParksAndCafe  
+2. In Cursor: **File → Open Folder** → the `ParksAndCafe` folder  
+3. In the terminal (Cursor → Terminal):
+   ```bash
+   cp android/app/google-services.json.example android/app/google-services.json
+   cp web/.env.example web/.env
+   ```
+4. You should now see `android/app/google-services.json` in the sidebar  
+5. Open the **`android`** folder in **Android Studio** to Run on a device/emulator  
+
+(`google-services.json` stays gitignored; the `.example` file is what Git ships.)
+
+## Setup (Firebase already uses project `parksandcafe`)
+
+1. If you skipped the copy step above:  
+   `cp android/app/google-services.json.example android/app/google-services.json`
+2. Web client ID is already in  
    `app/src/main/res/values/strings.xml` → `default_web_client_id_placeholder`.
-4. Add debug SHA-1 for Google Sign-In:
+3. Add **your Mac’s** debug SHA-1 for Google Sign-In if sign-in fails:
    ```bash
    keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
    ```
-5. Open this `android/` folder in Android Studio, sync, run on a device/emulator with Google Play.
+4. Open this `android/` folder in Android Studio, sync, run on a device/emulator with Google Play.
+
 
 ## Enable Maps quick-save
 
