@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Parks &amp; Cafe</string>
+    <string name="widget_name">Parks &amp; Cafe</string>
+    <string name="widget_description">One-tap save for park and cafe spots while you drive.</string>
+    <string name="btn_park">Park</string>
+    <string name="btn_cafe">Cafe</string>
+    <string name="sign_in_title">Parks &amp; Cafe</string>
+    <string name="sign_in_subtitle">Sign in with Google to sync your spots across phone and web.</string>
+    <string name="sign_in_google">Continue with Google</string>
+    <string name="main_hint">Add the Parks &amp; Cafe widget for one-tap saves from the home screen. Enable Accessibility below so opening Google Maps also offers Park / Cafe.</string>
+
+    <string name="main_signed_in">Signed in — widget is ready.</string>
+    <string name="main_signed_out">Sign in to enable the widget.</string>
+    <string name="saving_park">Saving park…</string>
+    <string name="saving_cafe">Saving cafe…</string>
+    <string name="saved_park">Park saved</string>
+    <string name="saved_cafe">Cafe saved</string>
+    <string name="error_location">Could not get location. Check GPS and permissions.</string>
+    <string name="error_auth">Sign in first — open Parks &amp; Cafe.</string>
+    <string name="error_save">Could not save. Try again.</string>
+    <string name="permission_needed">Location permission is required to save spots.</string>
+    <string name="quick_save_title">Save this spot?</string>
+    <string name="quick_save_dismiss">Not now</string>
+    <string name="maps_save_title">When Maps opens</string>
+    <string name="maps_save_body">Show Park / Cafe when Google Maps is in the foreground. Requires Accessibility access (Maps package only).</string>
+    <string name="maps_save_enable">Enable Maps save</string>
+    <string name="maps_save_open_settings">Open Accessibility settings</string>
+    <string name="maps_save_toggle_on">Maps save is on</string>
+    <string name="maps_save_toggle_off">Maps save is paused</string>
+    <string name="accessibility_service_description">Parks &amp; Cafe uses Accessibility only to notice when Google Maps is open, then shows Park / Cafe save buttons. It does not read screen text, passwords, or control other apps.</string>
+    <!-- After adding google-services.json, prefer @string/default_web_client_id from the plugin.
+         Until then, paste your Web client ID from Firebase Console → Project settings → OAuth. -->
+    <string name="default_web_client_id_placeholder">YOUR_WEB_CLIENT_ID.apps.googleusercontent.com</string>
+</resources>
+

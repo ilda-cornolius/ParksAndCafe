@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand: moss + espresso, dusk atmosphere — not Material purple -->
+    <color name="brand_forest">#1B4332</color>
+    <color name="brand_moss">#2D6A4F</color>
+    <color name="brand_leaf">#40916C</color>
+    <color name="brand_cream">#F1E9DB</color>
+    <color name="brand_sand">#E6D5B8</color>
+    <color name="brand_espresso">#3D2314</color>
+    <color name="brand_coffee">#6F4E37</color>
+    <color name="brand_latte">#C4A484</color>
+    <color name="brand_dusk">#0F1C18</color>
+    <color name="brand_mist">#D8E2DC</color>
+    <color name="widget_park_start">#1B4332</color>
+    <color name="widget_park_end">#40916C</color>
+    <color name="widget_cafe_start">#3D2314</color>
+    <color name="widget_cafe_end">#8B5E3C</color>
+    <color name="on_brand">#F8F4EC</color>
+    <color name="ic_launcher_background">#1B4332</color>
+</resources>
